@@ -35,10 +35,10 @@ It allows grade entry for multiple subjects, calculates GPA, provides letter gra
 
 ## License / الرخصة
 
-This project is licensed under the MIT License.  
+This project is licensed under the **MIT** License.  
 You may use, modify, and distribute this software freely, **but please give credit to the original author**: Mohamed Gonem / محمد غنيم.
 
-**هذا المشروع مرخّص تحت رخصة MIT.  
+هذا المشروع مرخّص تحت رخصة **MIT**.  
 يمكنك استخدامه أو تعديله أو توزيعه بحرية، **لكن يُرجى ذكر المؤلف الأصلي**: Mohamed Gonem / محمد غنيم.  
 
 ---
