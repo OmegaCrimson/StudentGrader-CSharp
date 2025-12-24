@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrader", "StudentGrader/StudentGrader.csproj", "{F073E621-C3B8-4BA0-B343-35626945A29F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGrader", "StudentGrader.csproj", "{F073E621-C3B8-4BA0-B343-35626945A29F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,4 +29,5 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D53F81E9-5BEB-4B07-9E5A-B57267011BE6}
 	EndGlobalSection
+
 EndGlobal
