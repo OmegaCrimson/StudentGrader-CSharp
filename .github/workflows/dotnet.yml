@@ -1,20 +1,35 @@
-name: Build and Release
+name: Auto Semantic Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches:
+      - main
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install standard-version
+      run: npm install
+
+    - name: Run standard-version
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        npx standard-version
+        git push --follow-tags origin main
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
@@ -27,18 +42,26 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
 
-    - name: Publish
+    - name: Publish cross-platform
       run: dotnet publish StudentGrader.csproj -c Release -o publish
 
-    - name: Zip output
-      run: zip -r StudentGrader.zip publish/
+    - name: Publish Windows .exe
+      run: dotnet publish StudentGrader.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o win-publish
+
+    - name: Zip builds
+      run: |
+        zip -r StudentGrader.zip publish/
+        zip -r StudentGrader-win.zip win-publish/
 
     - name: Install GitHub CLI
       run: sudo apt-get install gh
 
-    - name: Create Release and Upload Asset
+    - name: Create GitHub Release
+      run: |
+        TAG=$(git describe --tags --abbrev=0)
+        gh auth setup-git
+        gh release create "$TAG" StudentGrader.zip StudentGrader-win.zip \
+          --title "Student Grader $TAG" \
+          --notes-file CHANGELOG.md
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        gh auth setup-git
-        gh release create "${GITHUB_REF_NAME}" StudentGrader.zip --title "Student Grader ${GITHUB_REF_NAME}" --notes "Automated release for ${GITHUB_REF_NAME}"
