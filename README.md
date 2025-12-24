@@ -31,7 +31,7 @@ Supports multi-subject entry, GPA calculation, persistent storage, and clean CLI
 
 ### 🔹 Option 1: Download Prebuilt Executable
 
-1. Go to the [Releases](https://github.com/yourusername/student-grader/releases) page  
+1. Go to the [Releases](https://github.com/OmegaCrimson/StudentGrader-CSharp/releases) page  
 2. Download the latest `.zip` or `.exe` file for your OS  
 3. Extract and run:
    - `StudentGrader.exe` (Windows)
@@ -41,7 +41,7 @@ Supports multi-subject entry, GPA calculation, persistent storage, and clean CLI
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/student-grader.git
+   git clone https://github.com/OmegaCrimson/StudentGrader-CSharp.git
    cd student-grader
    ```
 
@@ -111,7 +111,7 @@ This project uses **GitHub Actions** to automatically:
 
 - Build the app on every push to `main`
 - Run tests (if added)
-- Publish release artifacts (executables) to the [Releases](https://github.com/yourusername/student-grader/releases) page
+- Publish release artifacts (executables) to the [Releases](https://github.com/OmegaCrimson/StudentGrader-CSharp/releases) page
 
 You can download the latest version without building manually.
 
