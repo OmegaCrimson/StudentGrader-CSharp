@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)  
 ![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)  
 ![Downloads](https://img.shields.io/github/downloads/OmegaCrimson/StudentGrader-CSharp/total)
-![GitHub stars](https://img.shields.io/github/stars//OmegaCrimson/StudentGrader-CSharp?style=social)
+![GitHub stars](https://img.shields.io/github/stars/OmegaCrimson/StudentGrader-CSharp?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/OmegaCrimson/StudentGrader-CSharp?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/OmegaCrimson/StudentGrader-CSharp)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/OmegaCrimson/StudentGrader-CSharp)
