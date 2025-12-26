@@ -1,7 +1,7 @@
 # 🎓 Student Grader (C#) — CLI App  
 # برنامج تقييم الطلاب (C#) — تطبيق كونسول  
 
-[![Build Status](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/release.yml/badge.svg)](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml)  
+[![Build Status](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml)  
 ![GitHub release](https://img.shields.io/github/v/release/OmegaCrimson/StudentGrader-CSharp)  
 ![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)  
 ![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)  
