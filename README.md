@@ -1,11 +1,14 @@
 # 🎓 Student Grader (C#) — CLI App  
 # برنامج تقييم الطلاب (C#) — تطبيق كونسول  
 
-[![Build Status](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml)  
-![GitHub release](https://img.shields.io/github/v/release/OmegaCrimson/StudentGrader-CSharp)  
-![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)  
-![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)  
+## 📊 Project Status
+
+[![Build Status](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml)
+![GitHub release](https://img.shields.io/github/v/release/OmegaCrimson/StudentGrader-CSharp)
+![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)
+![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)
 ![Downloads](https://img.shields.io/github/downloads/OmegaCrimson/StudentGrader-CSharp/total)
+
 ![GitHub stars](https://img.shields.io/github/stars/OmegaCrimson/StudentGrader-CSharp?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/OmegaCrimson/StudentGrader-CSharp?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/OmegaCrimson/StudentGrader-CSharp)
