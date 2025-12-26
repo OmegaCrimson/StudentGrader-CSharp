@@ -1,9 +1,8 @@
 name: Auto Semantic Release
 
 on:
-  push:
-    branches:
-      - main
+  release:
+    types: [created] 
 
 permissions:
   contents: write
