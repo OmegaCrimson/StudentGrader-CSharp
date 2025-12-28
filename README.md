@@ -14,7 +14,6 @@ A modular, console-based student grading system built in C#.
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Cross--platform-green)
 ![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)
 ![Downloads](https://img.shields.io/github/downloads/OmegaCrimson/StudentGrader-CSharp/total)
-![Nuget](https://img.shields.io/nuget/v/StudentGrader?label=nuget)
 ![Last Commit](https://img.shields.io/github/last-commit/OmegaCrimson/StudentGrader-CSharp)
 ![Commits per Month](https://img.shields.io/github/commit-activity/m/OmegaCrimson/StudentGrader-CSharp)
 
