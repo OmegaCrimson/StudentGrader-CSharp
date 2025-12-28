@@ -87,31 +87,31 @@ jobs:
       run: sudo apt-get install gh
 
     - name: Create GitHub Release
-  if: ${{ github.event.inputs.dry_run != 'true' }}
-  run: |
-    echo "Detecting latest Git tag..."
-    TAG=$(git describe --tags --abbrev=0 || echo "")
-    echo "Latest tag: $TAG"
+      if: ${{ github.event.inputs.dry_run != 'true' }}
+      run: |
+        echo "Detecting latest Git tag..."
+        TAG=$(git describe --tags --abbrev=0 || echo "")
+        echo "Latest tag: $TAG"
 
-    if [ -z "$TAG" ]; then
-      echo "No tag found. Skipping release."
-      exit 0
-    fi
+        if [ -z "$TAG" ]; then
+          echo "No tag found. Skipping release."
+          exit 0
+        fi
 
-    NOTES_FILE="CHANGELOG.md"
-    if [ ! -f "$NOTES_FILE" ]; then
-      echo "CHANGELOG.md not found. Creating placeholder."
-      echo "Initial release." > "$NOTES_FILE"
-    fi
+        NOTES_FILE="CHANGELOG.md"
+        if [ ! -f "$NOTES_FILE" ]; then
+          echo "CHANGELOG.md not found. Creating placeholder."
+          echo "Initial release." > "$NOTES_FILE"
+        fi
 
-    echo "Creating release for tag: $TAG"
-    echo "Repository: $GITHUB_REPOSITORY"
-    echo "Artifacts: StudentGrader.zip, StudentGrader-win.zip"
+        echo "Creating release for tag: $TAG"
+        echo "Repository: $GITHUB_REPOSITORY"
+        echo "Artifacts: StudentGrader.zip, StudentGrader-win.zip"
 
-    gh release create "$TAG" StudentGrader.zip StudentGrader-win.zip \
-      --repo "$GITHUB_REPOSITORY" \
-      --title "Student Grader $TAG" \
-      --notes-file "$NOTES_FILE" \
-      --target main
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        gh release create "$TAG" StudentGrader.zip StudentGrader-win.zip \
+          --repo "$GITHUB_REPOSITORY" \
+          --title "Student Grader $TAG" \
+          --notes-file "$NOTES_FILE" \
+          --target main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
