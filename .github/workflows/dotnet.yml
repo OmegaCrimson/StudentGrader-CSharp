@@ -1,8 +1,7 @@
 name: Auto Semantic Release
 
 on:
-  release:
-    types: [created] 
+  workflow-dispatch:
 
 permissions:
   contents: write
