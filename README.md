@@ -21,8 +21,15 @@ A modular, console-based student grading system built in C#.
 ![Contributors](https://img.shields.io/github/contributors/OmegaCrimson/StudentGrader-CSharp)
 ![Code Size](https://img.shields.io/github/languages/code-size/OmegaCrimson/StudentGrader-CSharp)
 ![Top Language](https://img.shields.io/github/languages/top/OmegaCrimson/StudentGrader-CSharp)
-![Lines of Code](https://img.shields.io/tokei/lines/github/OmegaCrimson/StudentGrader-CSharp)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
+![GitHub Stars](https://img.shields.io/github/stars/OmegaCrimson/StudentGrader-CSharp?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/OmegaCrimson/StudentGrader-CSharp?style=social)
+![Built by Mohamed Gonem](https://img.shields.io/badge/built%20by-Mohamed%20Gonem-blue?style=flat-square&logo=github)
+![Made with C# and ❤️](https://img.shields.io/badge/made%20with-C%23%20and%20%E2%9D%A4-red?style=flat-square&logo=dotnet)
+![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen?style=flat-square&logo=github)
+![Maintained](https://img.shields.io/badge/maintained-actively-blue?style=flat-square)
+![CLI App](https://img.shields.io/badge/interface-CLI-lightgrey?style=flat-square&logo=terminal)
+
 
 **Author:** Mohamed Gonem / محمد غنيم  
 **Version:** 2.0  
