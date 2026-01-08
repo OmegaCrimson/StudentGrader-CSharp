@@ -10,7 +10,7 @@ A modular, console-based student grading system built in C#.
 
 [![Build](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/OmegaCrimson/StudentGrader-CSharp/actions/workflows/dotnet.yml)
 ![Release](https://img.shields.io/github/v/release/OmegaCrimson/StudentGrader-CSharp)
-![.NET](https://img.shields.io/badge/.NET-8.0-blueviolet)
+![.NET](https://img.shields.io/badge/.NET-9.0-blueviolet)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Cross--platform-green)
 ![License](https://img.shields.io/github/license/OmegaCrimson/StudentGrader-CSharp)
 ![Downloads](https://img.shields.io/github/downloads/OmegaCrimson/StudentGrader-CSharp/total)
@@ -107,7 +107,7 @@ StudentGrader-CSharp/
 ## 🛠️ Tech Stack
 
 - C# 8.0+
-- .NET SDK 8.0
+- .NET SDK 9.0
 - Console I/O
 - JSON serialization
 - GitHub Actions (CI/CD)
