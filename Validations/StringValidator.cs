@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Exceptions;
 
 namespace Validations
@@ -19,6 +20,14 @@ namespace Validations
             if (string.IsNullOrWhiteSpace(value))
             {
                 throw new StringLengthOutOfRangeException($"{label} is required.", 0, 1, int.MaxValue);
+            }
+        }
+
+        public static void ValidateListItem(string value, List<string> validItems, string label)
+        {
+            if (!validItems.Contains(value))
+            {
+                throw new StringInvalidValueException($"Invalid {label} value.", value, validItems);
             }
         }
     }

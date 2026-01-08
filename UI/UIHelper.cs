@@ -82,11 +82,11 @@ namespace UI
             }
         }
 
-        public static void BodyWithHeader(string message, List<string> lines, int style = 2, int length = 30, bool clear = true, bool numbered = true, int indent = 2)
+        public static void BodyWithHeader(string message, List<string> lines, int style = 1, int length = 30, bool clear = true, bool numbered = true, int indent = 2)
         {
             try
             {
-                Header(message, style, length);
+                Header(message, style, length,false);
                 Body(lines, numbered, indent);
                 Line(length, style);
             }
@@ -100,7 +100,7 @@ namespace UI
         {
             return style switch
             {
-                1 => '\u2500',
+                1 => '\u2500', 
                 2 => '\u2501',
                 3 => '\u2550',
                 4 => '\u2015',
